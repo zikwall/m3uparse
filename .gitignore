@@ -1,2 +1,3 @@
 /plists/uploads/*.m3u
 /plists/uploads/*.m3u8
+/src/php/.idea
