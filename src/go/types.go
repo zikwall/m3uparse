@@ -1,6 +1,8 @@
 package _go
 
 type Playlist struct {
-	Name string
-	Url  string
+	EpgId int
+	Name  string
+	Url   string
+	From  string
 }

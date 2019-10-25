@@ -6,12 +6,12 @@ import (
 	"strings"
 )
 
-func Free() []parse.Playlist {
-	if err := parse.DownloadFile("./plists/uploads/free.m3u", parse.URLS["free"]); err != nil {
+func FreeBEstTv() []parse.Playlist {
+	if err := parse.DownloadFile("./plists/uploads/free_best_tv.m3u", parse.URLS["free_best_tv"]); err != nil {
 		panic(err)
 	}
 
-	b, err := ioutil.ReadFile("./plists/uploads/free.m3u")
+	b, err := ioutil.ReadFile("./plists/uploads/free_best_tv.m3u")
 
 	if err != nil {
 		panic(err)
@@ -32,7 +32,7 @@ func Free() []parse.Playlist {
 		result = append(result, parse.Playlist{
 			Name: name,
 			Url:  url,
-			From: "free",
+			From: "free_best_tv",
 		})
 	}
 

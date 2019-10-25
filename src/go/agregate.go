@@ -25,8 +25,10 @@ func PlaylistMerge(channels map[int]*ch.Normal, playlists ...[]Playlist) map[int
 				}
 
 				result[id] = &Playlist{
-					Name: v.Origin,
-					Url:  item.Url,
+					Name:  v.Origin,
+					Url:   item.Url,
+					EpgId: id,
+					From:  item.From,
 				}
 			}
 		}
@@ -53,6 +55,12 @@ func ChannelMerge(channels ...map[string]int) map[int]*ch.Normal {
 
 	// sanitize
 	for k, v := range normals {
+		// off
+		if v.Use == false {
+			delete(normals, k)
+		}
+
+		// not availabe channels (names)
 		if len(v.Various) <= 0 {
 			delete(normals, k)
 		}

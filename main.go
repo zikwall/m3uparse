@@ -10,18 +10,11 @@ import (
 
 func main() {
 	free := parsers.Free()
+	freeBestTv := parsers.FreeBEstTv()
 
-	aggregated := _go.PlaylistMerge(_go.ChannelMerge(channels.Free()), free)
+	aggregated := _go.PlaylistMerge(_go.ChannelMerge(channels.Free()), free, freeBestTv)
 
 	for _, i := range aggregated {
-		fmt.Printf("Name: %s Url: %s\n", i.Name, i.Url)
+		fmt.Printf("%s | # %d Name: %s Url: %s\n", i.From, i.EpgId, i.Name, i.Url)
 	}
-
-	/*b, err := json.Marshal(_go.ChannelMerge(channels.Free()))
-
-	if err != nil {
-		panic(err)
-	}
-
-	fmt.Println(string(b))*/
 }
