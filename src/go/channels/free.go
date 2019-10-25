@@ -1,8 +1,9 @@
 package channels
 
+import (
+	"../../go"
+)
+
 func Free() map[string]int {
-	return map[string]int{
-		"Odessa Int2.": 7,
-		"Синергия ТВ2": 286,
-	}
+	return _go.GetWhiteListChannels("free")
 }

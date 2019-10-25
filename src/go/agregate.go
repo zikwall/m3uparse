@@ -1,11 +1,10 @@
 package _go
 
 import (
-	ch "./channels"
 	"./helpers"
 )
 
-func PlaylistMerge(channels map[int]*ch.Normal, playlists ...[]Playlist) map[int]*Playlist {
+func PlaylistMerge(channels map[int]*Normal, playlists ...[]Playlist) map[int]*Playlist {
 	result := map[int]*Playlist{}
 
 	// all playlists
@@ -35,36 +34,4 @@ func PlaylistMerge(channels map[int]*ch.Normal, playlists ...[]Playlist) map[int
 	}
 
 	return result
-}
-
-func ChannelMerge(channels ...map[string]int) map[int]*ch.Normal {
-	normals := ch.Normales
-
-	for _, channel := range channels {
-		for name, id := range channel {
-
-			// if not exist this channel (id) in normalize channels
-			if _, ok := normals[id]; !ok {
-				continue
-			}
-
-			// add possible name
-			normals[id].Various = append(normals[id].Various, name)
-		}
-	}
-
-	// sanitize
-	for k, v := range normals {
-		// off
-		if v.Use == false {
-			delete(normals, k)
-		}
-
-		// not availabe channels (names)
-		if len(v.Various) <= 0 {
-			delete(normals, k)
-		}
-	}
-
-	return normals
 }

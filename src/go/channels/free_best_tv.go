@@ -1,7 +1,9 @@
 package channels
 
+import (
+	"../../go"
+)
+
 func FreeBestTv() map[string]int {
-	return map[string]int{
-		"RT Документальный": 463,
-	}
+	return _go.GetWhiteListChannels("free_best_tv")
 }

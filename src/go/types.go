@@ -6,3 +6,9 @@ type Playlist struct {
 	Url   string
 	From  string
 }
+
+type Normal struct {
+	Origin  string
+	Various []string
+	Use     bool
+}
