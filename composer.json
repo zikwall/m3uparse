@@ -1,0 +1,23 @@
+{
+  "name": "zikwall/m3uparse",
+  "description": "Go and PHP version parser different m3u playlists and EPG",
+  "keywords": ["m3u", "parse", "php", "go", "epg"],
+  "support": {
+    "issues": "https://github.com/zikwall/m3uparse/issues?state=open",
+    "source": "https://github.com/zikwall/m3uparse"
+  },
+  "authors": [
+    {
+      "name": "Andrey Kapitonov",
+      "email": "andrey.kapitonov.96@gmall.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "zikwall\\m3uparse\\src\\php\\": ""
+    }
+  }
+}
