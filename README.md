@@ -4,6 +4,17 @@
 
 `composer require zikwall/m3uparse`
 
+#### Develop mode
+
+```json
+{
+	"minimum-stability": "dev",
+	"require": {
+		"zikwall/m3uparse": "dev-master"
+	}
+}
+```
+
 ## Installation Go Library
 
 `go get github.com/zikwall/m3uparse`
