@@ -21,6 +21,28 @@
 }
 ```
 
+#### How to use?
+
+```php
+<?php
+
+require_once './vendor/autoload.php';
+
+use zikwall\m3uparse\Aggregation;
+use zikwall\m3uparse\Channels;
+
+use zikwall\m3uparse\parsers\{
+    Free,
+    FreeBestTv
+};
+
+$agg = new Aggregation();
+
+print_r(
+    $agg->merge(Channels::merge(Channels::get('free'), Channels::get('free_best_tv')), new Free(), new FreeBestTv())
+);
+```
+
 ## Installation Go Library
 
 `go get github.com/zikwall/m3uparse`
