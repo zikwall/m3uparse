@@ -1,4 +1,5 @@
 <?php
+namespace zikwall\m3uparse\types;
 
 class Playlist extends IType
 {

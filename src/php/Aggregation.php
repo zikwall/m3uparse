@@ -1,6 +1,8 @@
 <?php
 
-require_once './parsers/IParse.php';
+namespace zikwall\m3uparse;
+
+use zikwall\m3uparse\parsers\IParse;
 
 class Aggregation
 {
