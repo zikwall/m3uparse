@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "zikwall\\m3uparse": "src/php/"
+      "zikwall\\m3uparse\\": "src/php/"
     }
   }
 }
