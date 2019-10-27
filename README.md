@@ -8,10 +8,16 @@
 
 ```json
 {
-	"minimum-stability": "dev",
-	"require": {
-		"zikwall/m3uparse": "dev-master"
-	}
+    "minimum-stability": "dev",
+    "repositories": [
+      {
+    	  "type": "git",
+    	  "url": "https://github.com/zikwall/m3uparse.git",
+      }
+    ],
+    "require": {
+    	"zikwall/m3uparse": "dev-develop"
+    }
 }
 ```
 
