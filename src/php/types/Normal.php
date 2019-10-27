@@ -1,8 +1,5 @@
 <?php
-/**
- * Author: a.andreev@limehd.tv
- * Site http://limehd.tv
- */
+namespace zikwall\m3uparse\types;
 
 class Normal
 {

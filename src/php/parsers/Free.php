@@ -1,13 +1,14 @@
 <?php
 
-require_once dirname(__DIR__) . '/Urls.php';
-require_once 'IParse.php';
+namespace zikwall\m3uparse\parsers;
+
+use zikwall\m3uparse\Urls;
 
 class Free implements IParse
 {
     public function parse()
     {
-        $source = file_get_contents(Urls::List['free']);
+        $source = file_get_contents(Urls::get('free'));
         $items = explode("#EXTINF:-1,", $source);
         $items = array_slice($items, 3);
 

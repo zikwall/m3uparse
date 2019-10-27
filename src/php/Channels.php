@@ -1,10 +1,17 @@
 <?php
 
+namespace zikwall\m3uparse;
+
 class Channels
 {
-    final public static function get($name) : array
+    final public static function get(string $name) : array
     {
-        return json_decode(file_get_contents(sprintf('%s/channels/%s.json', ROOT, $name)), true);
+        return json_decode(file_get_contents(self::resolveName($name)), true);
+    }
+
+    public static function resolveName(string $name) : string
+    {
+        return sprintf('%s/channels/%s.json', Helper::ROOT(), $name);
     }
 
     final public static function norm() : array
