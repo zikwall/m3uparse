@@ -6,6 +6,21 @@ use zikwall\m3uparse\parsers\IParse;
 
 class Aggregation
 {
+    public function __construct(string $root, string $playlistUploadDir = '', string $epgUploadDir = '')
+    {
+        if (!empty($root)) {
+            Helper::setRoot($root);
+        }
+
+        if (!empty($playlistUploadDir)) {
+            Helper::setPlaylistUploadDir($playlistUploadDir);
+        }
+
+        if (!empty($epgUploadDir)) {
+            Helper::setEpgUploadDir($epgUploadDir);
+        }
+    }
+
     final public function merge($channels, IParse...$playlists)
     {
         $result = [];
