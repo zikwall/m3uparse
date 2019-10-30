@@ -38,6 +38,6 @@ class Free extends BaseParse implements IParse
 
     public function channels() : array
     {
-        return json_decode(file_get_contents(Helper::getChannelsDir() . '/free.json'), true);
+        return json_decode(file_get_contents(dirname(__DIR__) . '/default/free.json'), true);
     }
 }
