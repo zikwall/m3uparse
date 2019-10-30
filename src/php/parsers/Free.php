@@ -10,7 +10,8 @@ class Free implements IParse
 {
     public function parse()
     {
-        Helper::download(Helper::getPlaylistUploadDir(), 'free', Urls::get('free'));
+        $sourceUrl = 'http://4pda.ru/pages/go/?u=http%3A%2F%2Fiptv2020.ucoz.net%2FFree.m3u&e=70709596';
+        Helper::download(Helper::getPlaylistUploadDir(), 'free', $sourceUrl);
 
         $source = file_get_contents(Playlists::get('free'));
         $items = explode("#EXTINF:-1,", $source);

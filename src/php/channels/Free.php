@@ -8,6 +8,6 @@ class Free extends BaseChannel implements IChannel
 {
     public function get()
     {
-        return json_encode(file_get_contents(Helper::getChannelsDir() . '/free.json'));
+        return json_decode(file_get_contents(Helper::getChannelsDir() . '/free.json'), true);
     }
 }

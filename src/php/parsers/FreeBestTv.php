@@ -10,7 +10,8 @@ class FreeBestTv implements IParse
 {
     public function parse()
     {
-        Helper::download(Helper::getPlaylistUploadDir(), 'free_best_tv', Urls::get('free_best_tv'));
+        $sourceUrl = 'http://4pda.ru/pages/go/?u=http%3A%2F%2Ftopplay.do.am%2FFreeBestTV.m3u&e=84875135';
+        Helper::download(Helper::getPlaylistUploadDir(), 'free_best_tv', $sourceUrl);
 
         $source = file_get_contents(Playlists::get('free_best_tv'));
         $items = explode("#EXTINF:-1,", $source);
