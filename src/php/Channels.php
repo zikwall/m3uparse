@@ -2,6 +2,8 @@
 
 namespace zikwall\m3uparse;
 
+use zikwall\m3uparse\channels\IChannel;
+
 class Channels
 {
     final public static function normalize() : array
@@ -9,11 +11,13 @@ class Channels
         return json_decode(file_get_contents(__DIR__ . '/normals/normalize.json'));
     }
 
-    final public static function merge(...$channels) : array
+    final public static function merge(IChannel ...$channels) : array
     {
         $normals = self::normalize();
 
         foreach ($channels as $channel) {
+            $channel = $channel->get();
+
             foreach ($channel as $id => $name) {
 
                 if (!isset($normals[$id])) {
