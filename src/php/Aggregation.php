@@ -6,18 +6,18 @@ use zikwall\m3uparse\parsers\IParse;
 
 class Aggregation
 {
-    public function __construct(string $root, string $playlistUploadDir = '', string $epgUploadDir = '')
+    public function __construct(Configure $config = null)
     {
-        if (!empty($root)) {
-            Helper::setRoot($root);
+        if (!empty($config->root)) {
+            Helper::setRoot($config->root);
         }
 
-        if (!empty($playlistUploadDir)) {
-            Helper::setPlaylistUploadDir($playlistUploadDir);
+        if (!empty($config->playlistUploadDirectory)) {
+            Helper::setPlaylistUploadDir($config->playlistUploadDirectory);
         }
 
-        if (!empty($epgUploadDir)) {
-            Helper::setEpgUploadDir($epgUploadDir);
+        if (!empty($config->epgUploadDirectory)) {
+            Helper::setEpgUploadDir($config->epgUploadDirectory);
         }
     }
 
