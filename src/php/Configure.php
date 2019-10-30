@@ -25,7 +25,11 @@ class Configure
      * @param string $epgUploadDir
      * @param string $channelsDir
      */
-    public function __construct(string $root, string $playlistUploadDir = '', string $epgUploadDir = '', string $channelsDir)
+    public function __construct(
+        string $root,
+        string $playlistUploadDir = '',
+        string $epgUploadDir = '',
+        string $channelsDir = '')
     {
         $this->rootDirectory = $root;
         $this->playlistUploadDirectory = $playlistUploadDir;

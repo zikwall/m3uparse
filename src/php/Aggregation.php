@@ -2,7 +2,7 @@
 
 namespace zikwall\m3uparse;
 
-use zikwall\m3uparse\parsers\IParse;
+use zikwall\m3uparse\interfaces\IParse;
 
 class Aggregation
 {
@@ -21,9 +21,16 @@ class Aggregation
         }
     }
 
-    final public function merge($channels, IParse...$playlists)
+    final public function merge(IParse...$playlists)
     {
         $result = [];
+        $channels = [];
+
+        foreach ($playlists as $playlist) {
+            $channels[] = $playlist->channels();
+        }
+
+        $channels = Channels::merge($channels);
 
         foreach ($playlists as $playlist) {
             $items = $playlist->parse();

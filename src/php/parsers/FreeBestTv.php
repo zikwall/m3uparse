@@ -2,11 +2,12 @@
 
 namespace zikwall\m3uparse\parsers;
 
+use zikwall\m3uparse\base\BaseParse;
 use zikwall\m3uparse\Helper;
+use zikwall\m3uparse\interfaces\IParse;
 use zikwall\m3uparse\Playlists;
-use zikwall\m3uparse\Urls;
 
-class FreeBestTv implements IParse
+class FreeBestTv extends BaseParse implements IParse
 {
     public function parse()
     {
@@ -34,5 +35,10 @@ class FreeBestTv implements IParse
         }
 
         return $playlist;
+    }
+
+    public function channels() : array
+    {
+        return json_decode(file_get_contents(Helper::getChannelsDir() . '/free_best_tv.json'), true);
     }
 }

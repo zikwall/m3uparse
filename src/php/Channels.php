@@ -11,15 +11,12 @@ class Channels
         return json_decode(file_get_contents(__DIR__ . '/normals/normalize.json'), true);
     }
 
-    final public static function merge(IChannel ...$channels) : array
+    final public static function merge($channels = []) : array
     {
         $normals = self::normalize();
 
         foreach ($channels as $channel) {
-            $channel = $channel->get();
-
-            foreach ($channel as $id => $name) {
-
+            foreach ($channel as $name => $id) {
                 if (!isset($normals[$id])) {
                     continue;
                 }
