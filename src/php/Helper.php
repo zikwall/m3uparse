@@ -41,16 +41,12 @@ class Helper
 
     public static function setPlaylistUploadDir(string $newPlaylistDir) : void
     {
-        if (is_dir($newPlaylistDir)) {
-            self::$playlistUploadDir = $newPlaylistDir;
-        }
+        self::$playlistUploadDir = $newPlaylistDir;
     }
 
     public static function setEpgUploadDir(string $newEpgDir) : void
     {
-        if(is_dir($newEpgDir)) {
-            self::$epgUploadDir = $newEpgDir;
-        }
+        self::$epgUploadDir = $newEpgDir;
     }
 
     public static function getPlaylistUploadDir() : string
