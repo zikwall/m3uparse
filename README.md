@@ -28,25 +28,18 @@
 
 require_once './vendor/autoload.php';
 
-use zikwall\m3uparse\Aggregation;
-use zikwall\m3uparse\Channels;
+require_once 'vendor/autoload.php';
 
+use zikwall\m3uparse\Aggregation;
+use zikwall\m3uparse\Configure;
 use zikwall\m3uparse\parsers\{
     Free,
     FreeBestTv
 };
 
-$agg = new Aggregation();
+$agg = new Aggregation(new Configure(__DIR__));
 
 print_r(
-    $agg->merge(Channels::merge(Channels::get('free'), Channels::get('free_best_tv')), new Free(), new FreeBestTv())
+    $agg->merge(new Free(), new FreeBestTv())
 );
 ```
-
-### Minimal Description
-
-- /channels - Тут находятся списки каналов, которые нужно добавить
-    1. normilize.json - главный файл, для формирования плейлиста
-- /epgs - Тут находятся EPG 
-- /plists
-    1. /uploads - Тут находятся загруженные плейлисты
