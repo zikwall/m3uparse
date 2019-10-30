@@ -27,9 +27,7 @@ class Helper
 
     public static function setChannelsDir(string $newChannelsDir) : void
     {
-        if (is_dir($newChannelsDir)) {
-            self::$channelsDir = $newChannelsDir;
-        }
+        self::$channelsDir = $newChannelsDir;
     }
 
     public static function getChannelsDir() : string
