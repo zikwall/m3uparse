@@ -19,6 +19,10 @@ class Aggregation
         if (!empty($config->epgUploadDirectory)) {
             Helper::setEpgUploadDir($config->epgUploadDirectory);
         }
+
+        if (!empty($config->channelsDirectory)) {
+            Helper::setChannelsDir($config->channelsDirectory);
+        }
     }
 
     final public function merge(IParse...$playlists)
