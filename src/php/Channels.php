@@ -2,30 +2,21 @@
 
 namespace zikwall\m3uparse;
 
+use zikwall\m3uparse\channels\IChannel;
+
 class Channels
 {
-    final public static function get(string $name) : array
+    final public static function normalize() : array
     {
-        return json_decode(file_get_contents(self::resolveName($name)), true);
+        return json_decode(file_get_contents(__DIR__ . '/normals/normalize.json'), true);
     }
 
-    public static function resolveName(string $name) : string
+    final public static function merge($channels = []) : array
     {
-        return sprintf('%s/channels/%s.json', Helper::ROOT(), $name);
-    }
-
-    final public static function norm() : array
-    {
-        return self::get('normilize');
-    }
-
-    final public static function merge(...$channels) : array
-    {
-        $normals = self::norm();
+        $normals = self::normalize();
 
         foreach ($channels as $channel) {
-            foreach ($channel as $id => $name) {
-
+            foreach ($channel as $name => $id) {
                 if (!isset($normals[$id])) {
                     continue;
                 }

@@ -7,6 +7,7 @@ class Helper
     private static $root = '';
     private static $playlistUploadDir = '';
     private static $epgUploadDir = '';
+    private static $channelsDir = '';
 
     public static function setRoot(string $root)
     {
@@ -22,6 +23,22 @@ class Helper
         }
 
         return dirname(dirname(dirname(dirname(dirname(__DIR__)))));
+    }
+
+    public static function setChannelsDir(string $newChannelsDir) : void
+    {
+        if (is_dir($newChannelsDir)) {
+            self::$channelsDir = $newChannelsDir;
+        }
+    }
+
+    public static function getChannelsDir() : string
+    {
+        if (!empty(self::$channelsDir)) {
+            return self::ROOT() . self::$channelsDir;
+        }
+
+        return self::ROOT() . '/channels';
     }
 
     public static function setPlaylistUploadDir(string $newPlaylistDir) : void

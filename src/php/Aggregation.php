@@ -2,28 +2,35 @@
 
 namespace zikwall\m3uparse;
 
-use zikwall\m3uparse\parsers\IParse;
+use zikwall\m3uparse\interfaces\IParse;
 
 class Aggregation
 {
-    public function __construct(string $root, string $playlistUploadDir = '', string $epgUploadDir = '')
+    public function __construct(Configure $config = null)
     {
-        if (!empty($root)) {
-            Helper::setRoot($root);
+        if (!empty($config->root)) {
+            Helper::setRoot($config->root);
         }
 
-        if (!empty($playlistUploadDir)) {
-            Helper::setPlaylistUploadDir($playlistUploadDir);
+        if (!empty($config->playlistUploadDirectory)) {
+            Helper::setPlaylistUploadDir($config->playlistUploadDirectory);
         }
 
-        if (!empty($epgUploadDir)) {
-            Helper::setEpgUploadDir($epgUploadDir);
+        if (!empty($config->epgUploadDirectory)) {
+            Helper::setEpgUploadDir($config->epgUploadDirectory);
         }
     }
 
-    final public function merge($channels, IParse...$playlists)
+    final public function merge(IParse...$playlists)
     {
         $result = [];
+        $channels = [];
+
+        foreach ($playlists as $playlist) {
+            $channels[] = $playlist->channels();
+        }
+
+        $channels = Channels::merge($channels);
 
         foreach ($playlists as $playlist) {
             $items = $playlist->parse();

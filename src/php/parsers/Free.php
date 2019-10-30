@@ -2,15 +2,17 @@
 
 namespace zikwall\m3uparse\parsers;
 
+use zikwall\m3uparse\base\BaseParse;
 use zikwall\m3uparse\Helper;
+use zikwall\m3uparse\interfaces\IParse;
 use zikwall\m3uparse\Playlists;
-use zikwall\m3uparse\Urls;
 
-class Free implements IParse
+class Free extends BaseParse implements IParse
 {
     public function parse()
     {
-        Helper::download(Helper::getPlaylistUploadDir(), 'free', Urls::get('free'));
+        $sourceUrl = 'http://4pda.ru/pages/go/?u=http%3A%2F%2Fiptv2020.ucoz.net%2FFree.m3u&e=70709596';
+        Helper::download(Helper::getPlaylistUploadDir(), 'free', $sourceUrl);
 
         $source = file_get_contents(Playlists::get('free'));
         $items = explode("#EXTINF:-1,", $source);
@@ -32,5 +34,10 @@ class Free implements IParse
         }
 
         return $playlist;
+    }
+
+    public function channels() : array
+    {
+        return json_decode(file_get_contents(Helper::getChannelsDir() . '/free.json'), true);
     }
 }
