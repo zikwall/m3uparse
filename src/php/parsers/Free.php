@@ -20,7 +20,7 @@ class Free extends BaseParse implements IParse
         $playlist = [];
 
         foreach ($items as $item) {
-            if (strpos($item, 'http') === false) {
+            if (strpos($item, 'https') === false) {
                 continue;
             }
 
