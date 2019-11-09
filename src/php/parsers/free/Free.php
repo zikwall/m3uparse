@@ -1,7 +1,8 @@
 <?php
 
-namespace zikwall\m3uparse\parsers;
+namespace zikwall\m3uparse\parsers\free;
 
+use zikwall\m3uparse\Aggregation;
 use zikwall\m3uparse\base\BaseParse;
 use zikwall\m3uparse\Helper;
 use zikwall\m3uparse\interfaces\IParse;
@@ -9,12 +10,14 @@ use zikwall\m3uparse\Playlists;
 
 class Free extends BaseParse implements IParse
 {
-    public function parse()
+    public $name = 'free';
+
+    public function parse(Aggregation $aggregation)
     {
         $sourceUrl = 'http://4pda.ru/pages/go/?u=http%3A%2F%2Fiptv2020.ucoz.net%2FFree.m3u&e=70709596';
-        Helper::download(Helper::getPlaylistUploadDir(), 'free', $sourceUrl);
+        $aggregation->downloadPlaylist($aggregation->getPlaylistUploadDirectory(), $this->name, $sourceUrl);
 
-        $source = file_get_contents(Playlists::get('free'));
+        $source = file_get_contents($aggregation->getPlaylistSource($this->name));
         $items = explode("#EXTINF:-1,", $source);
         $items = array_slice($items, 3);
         $playlist = [];
@@ -29,7 +32,7 @@ class Free extends BaseParse implements IParse
             $playlist[] = [
                 'name' => trim($name),
                 'url'  => trim($url),
-                'from' => 'free'
+                'from' => $this->name
             ];
         }
 
@@ -38,6 +41,6 @@ class Free extends BaseParse implements IParse
 
     public function channels() : array
     {
-        return json_decode(file_get_contents(dirname(__DIR__) . '/default/free.json'), true);
+        return json_decode(file_get_contents(__DIR__. "/{$this->name}.json"), true);
     }
 }
