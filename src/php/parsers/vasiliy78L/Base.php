@@ -42,6 +42,10 @@ class Base extends BaseParse implements IParse
                 }
             }
 
+            if (strpos($url, 'https') === false) {
+                continue;
+            }
+
             // иногда встречается пробелы в ссылках
             if (strpos($name, ',') !== false) {
                 $ex = explode(',', $name);
