@@ -1,7 +1,8 @@
 <?php
 
-namespace zikwall\m3uparse\parsers;
+namespace zikwall\m3uparse\parsers\freebesttv;
 
+use zikwall\m3uparse\Aggregation;
 use zikwall\m3uparse\base\BaseParse;
 use zikwall\m3uparse\Helper;
 use zikwall\m3uparse\interfaces\IParse;
@@ -9,12 +10,14 @@ use zikwall\m3uparse\Playlists;
 
 class FreeBestTv extends BaseParse implements IParse
 {
-    public function parse()
+    public $name = 'free_best_tv';
+    
+    public function parse(Aggregation $aggregation)
     {
         $sourceUrl = 'http://4pda.ru/pages/go/?u=http%3A%2F%2Ftopplay.do.am%2FFreeBestTV.m3u&e=84875135';
-        Helper::download(Helper::getPlaylistUploadDir(), 'free_best_tv', $sourceUrl);
+        $aggregation->downloadPlaylist($aggregation->getPlaylistUploadDirectory(), $this->name, $sourceUrl);
 
-        $source = file_get_contents(Playlists::get('free_best_tv'));
+        $source = file_get_contents($aggregation->getPlaylistSource($this->name));
         $items = explode("#EXTINF:-1,", $source);
         $items = array_slice($items, 3);
 
@@ -30,7 +33,7 @@ class FreeBestTv extends BaseParse implements IParse
             $playlist[] = [
                 'name' => trim($name),
                 'url'  => trim($url),
-                'from' => 'free_best_tv'
+                'from' => $this->name
             ];
         }
 
@@ -39,6 +42,6 @@ class FreeBestTv extends BaseParse implements IParse
 
     public function channels() : array
     {
-        return json_decode(file_get_contents(dirname(__DIR__) . '/default/free.json'), true);
+        return json_decode(file_get_contents(__DIR__ . "/{$this->name}.json"), true);
     }
 }

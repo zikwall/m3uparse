@@ -8,7 +8,7 @@ class Channels
 {
     final public static function normalize() : array
     {
-        return json_decode(file_get_contents(__DIR__ . '/normals/normalize.json'), true);
+        return json_decode(file_get_contents(__DIR__ . '/normalization/normalize.json'), true);
     }
 
     final public static function merge($channels = []) : array

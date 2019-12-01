@@ -6,23 +6,28 @@ use zikwall\m3uparse\interfaces\IParse;
 
 class Aggregation
 {
-    public function __construct(Configure $config = null)
+    use Paths;
+    use Downloader;
+
+    /**
+     * @var Playlists
+     */
+    public $playlists = null;
+    /**
+     * @var string
+     */
+    public $uploadFolder = '';
+    /**
+     * @var string
+     */
+    public $rootUploadDirectory = '';
+
+    public function __construct(Configuration $configuration)
     {
-        if (!empty($config->root)) {
-            Helper::setRoot($config->root);
-        }
+        $this->uploadFolder = $configuration->uploadFolder;
+        $this->rootUploadDirectory = $configuration->root;
 
-        if (!empty($config->playlistUploadDirectory)) {
-            Helper::setPlaylistUploadDir($config->playlistUploadDirectory);
-        }
-
-        if (!empty($config->epgUploadDirectory)) {
-            Helper::setEpgUploadDir($config->epgUploadDirectory);
-        }
-
-        if (!empty($config->channelsDirectory)) {
-            Helper::setChannelsDir($config->channelsDirectory);
-        }
+        $this->ifNotExistNotExistCreateUpload();
     }
 
     final public function merge(IParse...$playlists)
@@ -37,7 +42,7 @@ class Aggregation
         $channels = Channels::merge($channels);
 
         foreach ($playlists as $playlist) {
-            $items = $playlist->parse();
+            $items = $playlist->parse($this);
 
             foreach ($items as $item) {
                 foreach ($channels as $id => $channel) {
