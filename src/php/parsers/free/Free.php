@@ -12,7 +12,7 @@ class Free extends BaseParse implements IParse
 {
     public $name = 'free';
 
-    public function parse(Aggregation $aggregation)
+    public function parse(Aggregation $aggregation) : array
     {
         $sourceUrl = 'http://4pda.ru/pages/go/?u=http%3A%2F%2Fiptv2020.ucoz.net%2FFree.m3u&e=70709596';
         $aggregation->downloadPlaylist($aggregation->getPlaylistUploadDirectory(), $this->name, $sourceUrl);
@@ -23,12 +23,12 @@ class Free extends BaseParse implements IParse
         $playlist = [];
 
         foreach ($items as $item) {
-            if (strpos($item, 'https') === false) {
-                continue;
-            }
-
             list($name, $url) = preg_split('/\r\n|\r|\n/', $item);
 
+            if ($this->isSSL($url) === false) {
+                continue;
+            }
+            
             $playlist[] = [
                 'name' => trim($name),
                 'url'  => trim($url),

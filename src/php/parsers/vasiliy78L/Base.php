@@ -10,9 +10,9 @@ use zikwall\m3uparse\Playlists;
 
 class Base extends BaseParse implements IParse
 {
-    public $name = 'base';
+    public $name = 'vasiliy78L';
 
-    public function parse(Aggregation $aggregation)
+    public function parse(Aggregation $aggregation) : array
     {
         $sourceUrl = 'https://raw.githubusercontent.com/vasiliy78L/myIPTV/master/iptv.m3u';
         $aggregation->downloadPlaylist($aggregation->getPlaylistUploadDirectory(), $this->name, $sourceUrl);
@@ -42,7 +42,7 @@ class Base extends BaseParse implements IParse
                 }
             }
 
-            if (strpos($url, 'https') === false) {
+            if ($this->isSSL($url) === false) {
                 continue;
             }
 
@@ -58,7 +58,7 @@ class Base extends BaseParse implements IParse
                 'from' => $this->name
             ];
         }
-
+        
         return $playlist;
     }
 }

@@ -6,12 +6,24 @@ trait Downloader
 {
     public function downloadPlaylist(string $path, string $name, string $url)
     {
+        $newfname = $this->fullName($path, $name);
+
+        if (file_exists($newfname)) {
+            echo sprintf('[INFO] File: %s exist, delete...', $newfname);
+            unlink($newfname);
+
+            if (file_exists($newfname)) {
+                echo PHP_EOL, sprintf('[WARN] File: %s is not delete!', $newfname), PHP_EOL;
+            } else {
+                echo ' -- DELETED!', PHP_EOL;
+            }
+        }
+
         if (!is_dir($path)) {
             mkdir($path);
             chmod($path, 0755);
         }
 
-        $newfname = sprintf('%s/%s.m3u',$path, $name);
         $file = fopen ($url, 'rb');
         if ($file) {
             $newf = fopen ($newfname, 'wb');
@@ -29,5 +41,10 @@ trait Downloader
         if ($newf) {
             fclose($newf);
         }
+    }
+
+    public function fullName($path, $name) : string
+    {
+        return sprintf('%s/%s.m3u',$path, $name);
     }
 }
