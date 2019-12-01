@@ -57,7 +57,8 @@ class Aggregation
                     $result[$id] = [
                         'epg_id' => $id,
                         'name'   => $item['name'],
-                        'url'    => $item['url']
+                        'url'    => $item['url'],
+                        'ssl'    => $item['ssl'],
                     ];
                 }
             }

@@ -25,14 +25,15 @@ class Free extends BaseParse implements IParse
         foreach ($items as $item) {
             list($name, $url) = preg_split('/\r\n|\r|\n/', $item);
 
-            if ($this->isSSL($url) === false) {
-                continue;
-            }
-            
+            //if ($this->isSSL($url) === false) {
+                //continue;
+            //}
+
             $playlist[] = [
                 'name' => trim($name),
                 'url'  => trim($url),
-                'from' => $this->name
+                'from' => $this->name,
+                'ssl'  => $this->isSSL($url) ? 1 : 0
             ];
         }
 

@@ -42,9 +42,9 @@ class Base extends BaseParse implements IParse
                 }
             }
 
-            if ($this->isSSL($url) === false) {
-                continue;
-            }
+            //if ($this->isSSL($url) === false) {
+                //continue;
+            //}
 
             // иногда встречается пробелы в ссылках
             if (strpos($name, ',') !== false) {
@@ -55,10 +55,11 @@ class Base extends BaseParse implements IParse
             $playlist[] = [
                 'name' => trim($name),
                 'url'  => trim($url),
-                'from' => $this->name
+                'from' => $this->name,
+                'ssl'  => $this->isSSL($url) ? 1 : 0
             ];
         }
-        
+
         return $playlist;
     }
 }

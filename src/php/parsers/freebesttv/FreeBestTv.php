@@ -11,7 +11,7 @@ use zikwall\m3uparse\Playlists;
 class FreeBestTv extends BaseParse implements IParse
 {
     public $name = 'free_best_tv';
-    
+
     public function parse(Aggregation $aggregation) : array
     {
         $sourceUrl = 'http://4pda.ru/pages/go/?u=http%3A%2F%2Ftopplay.do.am%2FFreeBestTV.m3u&e=84875135';
@@ -26,14 +26,15 @@ class FreeBestTv extends BaseParse implements IParse
         foreach ($items as $item) {
             list($name, $url) = preg_split('/\r\n|\r|\n/', $item);
 
-            if ($this->isSSL($url) === false) {
-                continue;
-            }
-            
+            //if ($this->isSSL($url) === false) {
+                //continue;
+            //}
+
             $playlist[] = [
                 'name' => trim($name),
                 'url'  => trim($url),
-                'from' => $this->name
+                'from' => $this->name,
+                'ssl'  => $this->isSSL($url) ? 1 : 0
             ];
         }
 
