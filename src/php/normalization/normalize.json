@@ -3294,11 +3294,36 @@
     "image": "TV 1000 Action"
   },
   "100005": {
-    "origin": "TV1000 Русское Кино HD",
+    "origin": "TV1000 Русское Кино",
     "various": [
-      "TV1000 Русское Кино HD"
+      "TV1000 Русское Кино"
     ],
     "use": true,
     "image": "TV 1000"
+  },
+  "200001": {
+    "origin": "МАТЧ!",
+    "various": [
+      "МАТЧ!"
+    ],
+    "use": true,
+    "image": "МАТЧ"
+  },
+  "200002": {
+    "origin": "МАТЧ! HD",
+    "various": [
+      "МАТЧ! HD"
+    ],
+    "use": true,
+    "image": "МАТЧ",
+    "useOrigin": true
+  },
+  "200003": {
+    "origin": "МАТЧ! АРЕНА",
+    "various": [
+      "МАТЧ! АРЕНА"
+    ],
+    "use": true,
+    "image": "МАТЧ"
   }
 }
