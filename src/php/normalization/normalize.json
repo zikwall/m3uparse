@@ -437,7 +437,8 @@
     "various":[
       "М2"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "M2"
   },
   "155":{
     "origin":"Твой Плюс (Херсон)",
@@ -865,7 +866,8 @@
     "various":[
       "Наше TV"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "НАШЕ ТВ"
   },
   "209":{
     "origin":"Светлое ТВ (Global)",
@@ -957,7 +959,8 @@
     "various":[
       "Первый канал Евразия"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Первый канал"
   },
   "220":{
     "origin":"НТМ HD (Мордовия)",
@@ -1111,7 +1114,8 @@
     "various":[
       "Грозный ТВ"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "ЧГТРК Грозный"
   },
   "240":{
     "origin":"Дайвинг TV",
@@ -1479,7 +1483,8 @@
     "various":[
       "Точка ТВ"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Точка тв"
   },
   "288":{
     "origin":"Pro 100 TV",
@@ -1626,7 +1631,8 @@
     "various":[
       "Первый Метео"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Первый МЕТЕО"
   },
   "306":{
     "origin":"Первый Музыкальный RU HD BY",
@@ -1710,7 +1716,8 @@
     "various":[
       "Россия 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Россия 24"
   },
   "317":{
     "origin":"12 Канал (Омск)",
@@ -1962,7 +1969,8 @@
     "various":[
       "Рен ТВ"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Рен ТВ"
   },
   "35":{
     "origin":"AD SPORT 2 HD",
@@ -2039,7 +2047,8 @@
     "various":[
       "France 24 (ENG)"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "FRANCE 24"
   },
   "36":{
     "origin":"FILM TV",
@@ -2102,7 +2111,8 @@
     "various":[
       "Россия 24 (Чита)"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Россия 24"
   },
   "368":{
     "origin":"Скиф (Беларусь)",
@@ -2130,7 +2140,8 @@
     "various":[
       "Астрахань.Ru TV HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "RU.TV"
   },
   "371":{
     "origin":"Витрина ТВ",
@@ -2298,7 +2309,8 @@
     "various":[
       "Радио Шансон ТВ"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Шансон ТВ"
   },
   "393":{
     "origin":"Сонце",
@@ -2571,7 +2583,8 @@
     "various":[
       "Первый канал HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Первый канал HD"
   },
   "428":{
     "origin":"Эхо ТВ 24 (Новоуральск)",
@@ -2676,7 +2689,8 @@
     "various":[
       "Дагестан ТВ"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Дагестан"
   },
   "441":{
     "origin":"Осетия-Ирыстон",
@@ -2816,7 +2830,8 @@
     "various":[
       "Мир 24 HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Мир HD"
   },
   "46":{
     "origin":"НТС (Севастополь)",
@@ -2851,7 +2866,8 @@
     "various":[
       "RT Документальный"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "RTД"
   },
   "47":{
     "origin":"Надежда",
@@ -2872,7 +2888,8 @@
     "various":[
       "Россия 24 (Ульяновск)"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Россия 24"
   },
   "5":{
     "origin":"Сказки Зайки",
@@ -2886,7 +2903,8 @@
     "various":[
       "Союз"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Союз"
   },
   "51":{
     "origin":"MTV Mix (Уфа)",
@@ -3026,7 +3044,8 @@
     "various":[
       "Первый канал (РФ)"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Первый канал"
   },
   "7":{
     "origin":"Odessa Int.",
@@ -3153,7 +3172,8 @@
     "various":[
       "Кавказ 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Россия 24"
   },
   "86":{
     "origin":"Мир +3 (KZ)",
@@ -3216,7 +3236,8 @@
     "various":[
       "Моя Планета"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Моя Планета"
   },
   "94":{
     "origin":"Пинск ТВ",
@@ -3307,7 +3328,7 @@
       "МАТЧ!"
     ],
     "use": true,
-    "image": "МАТЧ"
+    "image": "Матч ТВ"
   },
   "200002": {
     "origin": "МАТЧ! HD",
@@ -3315,7 +3336,7 @@
       "МАТЧ! HD"
     ],
     "use": true,
-    "image": "МАТЧ",
+    "image": "Матч ТВ",
     "useOrigin": true
   },
   "200003": {
@@ -3324,6 +3345,6 @@
       "МАТЧ! АРЕНА"
     ],
     "use": true,
-    "image": "МАТЧ"
+    "image": "Матч арена"
   }
 }
