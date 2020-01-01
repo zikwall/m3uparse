@@ -3262,9 +3262,9 @@
     "image": "ТВЦ"
   },
   "100001": {
-    "origin": "TV 1000 Action",
+    "origin": "TV1000 Action",
     "various": [
-      "TV 1000 Action"
+      "TV1000 Action"
     ],
     "use": true,
     "image": "TV 1000 Action"
@@ -3275,7 +3275,7 @@
       "TV1000 Premium HD"
     ],
     "use": true,
-    "image": "TV1000 Premium HD"
+    "image": "TV 1000 Premium HD"
   },
   "100003": {
     "origin": "TV1000",
@@ -3283,7 +3283,7 @@
       "TV1000"
     ],
     "use": true,
-    "image": "TV1000"
+    "image": "TV 1000"
   },
   "100004": {
     "origin": "TV1000 Action HD",
@@ -3291,7 +3291,7 @@
       "TV1000 Action HD"
     ],
     "use": true,
-    "image": "TV1000 Action"
+    "image": "TV 1000 Action"
   },
   "100005": {
     "origin": "TV1000 Русское Кино HD",
@@ -3299,6 +3299,6 @@
       "TV1000 Русское Кино HD"
     ],
     "use": true,
-    "image": "TV1000"
+    "image": "TV 1000"
   }
 }
