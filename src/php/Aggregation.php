@@ -59,6 +59,7 @@ class Aggregation
                         'name'   => $item['name'],
                         'url'    => $item['url'],
                         'ssl'    => $item['ssl'],
+                        'image'  => $channel['image']
                     ];
                 }
             }
