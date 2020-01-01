@@ -3405,7 +3405,7 @@
       "FOX Life"
     ],
     "use": true,
-    "image": "FOX Life"
+    "image": "FOX life"
   },
 
   "140001": {
@@ -3526,7 +3526,8 @@
       "Русский роман"
     ],
     "use": true,
-    "image": "Русский роман"
+    "image": "Русский роман",
+    "useOrigin": true
   },
   "140017": {
     "origin": "Русский детектив",
@@ -3665,7 +3666,8 @@
       "Disney Channel"
     ],
     "use": true,
-    "image": "Канал Disney"
+    "image": "Канал Disney",
+    "useOrigin": true
   },
   "170004": {
     "origin": "Disney Junior",
@@ -3673,7 +3675,8 @@
       "Disney Junior"
     ],
     "use": true,
-    "image": "Канал Disney"
+    "image": "Канал Disney",
+    "useOrigin": true
   },
   "170005": {
     "origin": "Disney XD",
