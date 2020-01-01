@@ -4,9 +4,7 @@ namespace zikwall\m3uparse\parsers\free;
 
 use zikwall\m3uparse\Aggregation;
 use zikwall\m3uparse\base\BaseParse;
-use zikwall\m3uparse\Helper;
 use zikwall\m3uparse\interfaces\IParse;
-use zikwall\m3uparse\Playlists;
 
 class Free extends BaseParse implements IParse
 {

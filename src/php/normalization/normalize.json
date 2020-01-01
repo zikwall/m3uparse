@@ -3282,6 +3282,7 @@
     "use":true,
     "image": "ТВЦ"
   },
+
   "100001": {
     "origin": "TV1000 Action",
     "various": [
@@ -3317,11 +3318,380 @@
   "100005": {
     "origin": "TV1000 Русское Кино",
     "various": [
-      "TV1000 Русское Кино"
+      "TV1000 Русское Кино",
+      "TV1000 Русское кино"
     ],
     "use": true,
     "image": "TV 1000"
   },
+  "100006": {
+    "origin": "TV1000 Premium",
+    "various": [
+      "TV1000 Premium"
+    ],
+    "use": true,
+    "image": "TV 1000 Premium HD"
+  },
+  "100007": {
+    "origin": "TV1000 Premium East",
+    "various": [
+      "TV1000 Premium East"
+    ],
+    "use": true,
+    "image": "TV 1000"
+  },
+  "100008": {
+    "origin": "TV 1000 Russkoe Kino",
+    "various": [
+      "TV 1000 Russkoe Kino"
+    ],
+    "use": true,
+    "image": "TV 1000"
+  },
+
+  "110001": {
+    "origin": "ViP Comedy HD",
+    "various": [
+      "ViP Comedy HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "110002": {
+    "origin": "ViP Megahit",
+    "various": [
+      "ViP Megahit"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "110003": {
+    "origin": "ViP Premiere",
+    "various": [
+      "ViP Premiere"
+    ],
+    "use": true,
+    "image": ""
+  },
+
+  "120001": {
+    "origin": "Sony Channel HD",
+    "various": [
+      "Sony Channel HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "120002": {
+    "origin": "Sony Sci-Fi",
+    "various": [
+      "Sony Sci-Fi"
+    ],
+    "use": true,
+    "image": ""
+  },
+
+  "130001": {
+    "origin": "FOX",
+    "various": [
+      "FOX"
+    ],
+    "use": true,
+    "image": "FOX"
+  },
+  "130002": {
+    "origin": "FOX Life",
+    "various": [
+      "FOX Life"
+    ],
+    "use": true,
+    "image": "FOX Life"
+  },
+
+  "140001": {
+    "origin": "Русский иллюзион",
+    "various": [
+      "Русский иллюзион"
+    ],
+    "use": true,
+    "image": "Русский Иллюзион"
+  },
+  "140002": {
+    "origin": "Кинокомедия",
+    "various": [
+      "Кинокомедия"
+    ],
+    "use": true,
+    "image": "Кинокомедия"
+  },
+  "140003": {
+    "origin": "Киномикс",
+    "various": [
+      "Киномикс"
+    ],
+    "use": true,
+    "image": "Киномикс"
+  },
+  "140004": {
+    "origin": "Кинопремьера HD",
+    "various": [
+      "Кинопремьера HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "140005": {
+    "origin": "Киносвидание",
+    "various": [
+      "Киносвидание"
+    ],
+    "use": true,
+    "image": "Киносвидание"
+  },
+  "140006": {
+    "origin": "Киносемья",
+    "various": [
+      "Киносемья"
+    ],
+    "use": true,
+    "image": "Киносемья"
+  },
+  "140008": {
+    "origin": "Киносерия",
+    "various": [
+      "Киносерия"
+    ],
+    "use": true,
+    "image": "Киносерия"
+  },
+  "140009": {
+    "origin": "Мужское кино",
+    "various": [
+      "Мужское кино"
+    ],
+    "use": true,
+    "image": "Мужское кино"
+  },
+  "140010": {
+    "origin": "Классика кино",
+    "various": [
+      "Классика кино"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "140011": {
+    "origin": "Индийское кино",
+    "various": [
+      "Индийское кино"
+    ],
+    "use": true,
+    "image": "Индийское кино"
+  },
+  "140012": {
+    "origin": "Родное кино",
+    "various": [
+      "Родное кино"
+    ],
+    "use": true,
+    "image": "Родное кино"
+  },
+  "140013": {
+    "origin": "Комедийное HD",
+    "various": [
+      "Комедийное HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "140014": {
+    "origin": "Классика кино HD",
+    "various": [
+      "Классика кино HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "140015": {
+    "origin": "Kronehit HD",
+    "various": [
+      "Kronehit HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "140016": {
+    "origin": "Русский роман",
+    "various": [
+      "Русский роман"
+    ],
+    "use": true,
+    "image": "Русский роман"
+  },
+  "140017": {
+    "origin": "Русский детектив",
+    "various": [
+      "Русский детектив"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "140018": {
+    "origin": "Русский Бестселлер",
+    "various": [
+      "Русский Бестселлер"
+    ],
+    "use": true,
+    "image": "Русский бестселлер"
+  },
+
+  "150001": {
+    "origin": "В Мире Животных HD",
+    "various": [
+      "В Мире Животных HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "150002": {
+    "origin": "Oхотник и Рыболов HD",
+    "various": [
+      "Oхотник и Рыболов HD"
+    ],
+    "use": true,
+    "image": "Охотник и рыболов HD"
+  },
+  "150003": {
+    "origin": "Охота и Рыбалка",
+    "various": [
+      "Охота и Рыбалка"
+    ],
+    "use": true,
+    "image": "Охота и рыбалка"
+  },
+  "150004": {
+    "origin": "National Geographic",
+    "various": [
+      "National Geographic"
+    ],
+    "use": true,
+    "image": "National Geographic"
+  },
+  "150005": {
+    "origin": "National Geographic HD",
+    "various": [
+      "National Geographic HD"
+    ],
+    "use": true,
+    "image": "National Geographic HD"
+  },
+  "150006": {
+    "origin": "Discovery",
+    "various": [
+      "Discovery"
+    ],
+    "use": true,
+    "image": "Discovery HD"
+  },
+  "150007": {
+    "origin": "Animal Planet HD",
+    "various": [
+      "Animal Planet HD"
+    ],
+    "use": true,
+    "image": "Animal planet"
+  },
+  "150008": {
+    "origin": "Неизвестная планета",
+    "various": [
+      "Неизвестная планета"
+    ],
+    "use": true,
+    "image": ""
+  },
+  "150009": {
+    "origin": "Наш Дом HD",
+    "various": [
+      "Наш Дом HD"
+    ],
+    "use": true,
+    "image": ""
+  },
+
+  "160001": {
+    "origin": "ПЯТНИЦА! HD",
+    "various": [
+      "ПЯТНИЦА! HD"
+    ],
+    "use": true,
+    "image": "ПЯТНИЦА"
+  },
+  "160002": {
+    "origin": "Пятница",
+    "various": [
+      "Пятница"
+    ],
+    "use": true,
+    "image": "ПЯТНИЦА"
+  },
+  "160003": {
+    "origin": "Россия 1 HD",
+    "various": [
+      "Россия 1 HD"
+    ],
+    "use": true,
+    "image": "Россия HD"
+  },
+
+  "170001": {
+    "origin": "Nickelodeon",
+    "various": [
+      "Nickelodeon"
+    ],
+    "use": true,
+    "image": "Nickelodeon"
+  },
+  "170002": {
+    "origin": "Cartoon Network",
+    "various": [
+      "Cartoon Network"
+    ],
+    "use": true,
+    "image": "Cartoon Network"
+  },
+  "170003": {
+    "origin": "Disney Channel",
+    "various": [
+      "Disney Channel"
+    ],
+    "use": true,
+    "image": "Канал Disney"
+  },
+  "170004": {
+    "origin": "Disney Junior",
+    "various": [
+      "Disney Junior"
+    ],
+    "use": true,
+    "image": "Канал Disney"
+  },
+  "170005": {
+    "origin": "Disney XD",
+    "various": [
+      "Disney XD"
+    ],
+    "use": true,
+    "image": "Канал Disney"
+  },
+  "170006": {
+    "origin": "Disney канал",
+    "various": [
+      "Disney канал"
+    ],
+    "use": true,
+    "image": "Канал Disney"
+  },
+
   "200001": {
     "origin": "МАТЧ!",
     "various": [
