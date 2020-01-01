@@ -602,7 +602,9 @@
     "various":[
       "Рен ТВ International"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Рен ТВ",
+    "useOrigin": true
   },
   "176":{
     "origin":"Россия К",
@@ -1193,7 +1195,8 @@
       "СТС International"
     ],
     "use":true,
-    "image": "СТС"
+    "image": "СТС",
+    "useOrigin": true
   },
   "250":{
     "origin":"Univer TV",
@@ -2605,7 +2608,8 @@
     "various":[
       "Звезда"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Звезда"
   },
   "430":{
     "origin":"Travel Guide TV",
