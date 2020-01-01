@@ -59,7 +59,7 @@ class Aggregation
                         'name'   => $item['name'],
                         'url'    => $item['url'],
                         'ssl'    => $item['ssl'],
-                        'image'  => $channel['image']
+                        'image'  => $channel['image'] ? sprintf('http://tv.zikwall.ru/images/logo/%s.png', $channel['image']) : ''
                     ];
                 }
             }
