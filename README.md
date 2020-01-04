@@ -125,7 +125,8 @@ interface IParse
     [
        'name' => 'Channel Name',
        'url'  => 'Channel url to m3u',
-       'from' => 'From playlist' // optional
+       'from' => 'From playlist', // optional
+       'ssl'  => $this->isSSL($url) ? 1 : 0
     ]
     ...
 ]
