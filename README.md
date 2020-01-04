@@ -1,18 +1,58 @@
-# Парсер плейлистов
+# Парсер плейлистов | Playlists Parser
 
-### Особенности
+Данная библиотека - это сканер открытых плейлистов для создания едной базы плейлистов. Он собирает все в одну кучу, фильтрует и сортирует.
 
-- [x] Хорошие источники и парсеры по умолчанию.
-- [x] Гибкая конфигурация: Вы сами решаете какие сохранять, а какаие нет.
-- [x] Различные наименования каналов можно группировать и считать как один.
-- [ ] Парсер должен возвращать объект Channel.
-- [ ] Приоритеты на уровне каналов для различных источников, сейчас приоритеты на уровне плейлиста
-- [ ] Парсер ЕПГ.
-- [x] Автогенерация директорий из коробочки.
-- [ ] Автоматическая проверка валидности плейлиста и каналов в нем.
-- [x] Реализация парсера на Golang (нужно актуализировать под новое API)
+### Источники
 
-### Как использовать?
+- [x] [Forever (Common playlist)](https://webhalpme.ru/iptv-forever-samoobnovljaemyj-plejlist/)
+- [x] [vasiliy78L/myIPTV](https://github.com/vasiliy78L/myIPTV)
+- [x] [Бесплатный обновляемый плейлист от Great Crabs IPTV](https://4pda.ru/forum/index.php?showtopic=394145&st=4140#entry70709596)
+- [x] [Free Best TV](http://4pda.ru/pages/go/?u=http%3A%2F%2Ftopplay.do.am%2FFreeBestTV.m3u&e=84875135)
+- [ ] [Огромный сборник по всему миру iptv-org/iptv](https://github.com/iptv-org/iptv)
+
+Вы сами можете определить свой парсер.
+
+### Roadmap
+
+- [x] Auto directory generator & downloader
+- [x] Common Aggregation Interface
+    - [x] Autolink local parser channels with grouping
+    - [ ] Filter available channels in target playlist
+    - [x] Default parsers
+    - [ ] Link to EPG services
+    - [ ] Parser return Object Interface instead of array
+    - [ ] Categories
+    - [x] Extra Options (for apps):
+        - [x] Use origin stream
+        - [x] Image
+        - [x] Use or not
+        - [ ] Blocked
+        - [ ] WebView URL
+- [ ] Common EPG Aggregation Interface
+- [ ] [Go3uparse](https://github.com/zikwall/go3uparse)
+
+## Installation PHP Packgist
+
+`composer require zikwall/m3uparse`
+
+#### Develop mode
+
+```json
+{
+    "minimum-stability": "dev",
+    "repositories": [
+      {
+    	  "type": "git",
+    	  "url": "https://github.com/zikwall/m3uparse.git",
+      }
+    ],
+    "require": {
+    	"zikwall/m3uparse": "dev-develop"
+    }
+}
+```
+
+### How to use?
 
 ```php
 <?php
@@ -38,7 +78,7 @@ print_r(
 
 ```
 
-### Конфигурация
+### Configuration
 
 По умолчанию плейлисты скачиваются и сканируются из директории: RootDirectory + UploadFolder + PlaylistsFolder.
 
@@ -50,7 +90,7 @@ print_r(
 
 **Вывод:** `/public/uploads/playlists`
 
-##### Установка корневой директории
+##### Set root directory
 
 ```php
 <?php
@@ -60,7 +100,7 @@ $agg = new Aggregation(new \zikwall\m3uparse\Configuration(__DIR__));
 
 ```
 
-### Добавление своих парсеров
+### Add custom Parsers
 
 Каждый парсер должен следовать интерфейсу `IParse`
 
@@ -103,24 +143,3 @@ interface IParse
 ```
 
 Данный список добавляется к каналу из общего списка, как возможное наименование канала.
-
-## Installation PHP Packgist
-
-`composer require zikwall/m3uparse`
-
-#### Develop mode
-
-```json
-{
-    "minimum-stability": "dev",
-    "repositories": [
-      {
-    	  "type": "git",
-    	  "url": "https://github.com/zikwall/m3uparse.git",
-      }
-    ],
-    "require": {
-    	"zikwall/m3uparse": "dev-develop"
-    }
-}
-```
