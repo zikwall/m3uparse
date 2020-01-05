@@ -12,6 +12,17 @@
 
 Вы сами можете определить свой парсер.
 
+### Источники телепрограммы
+
+- [x] http://www.teleguide.info/download/new3/xmltv.xml.gz
+- [ ] http://www.teleguide.info/download/new3/jtv.zip
+- [ ] http://programtv.ru/jtv.zip
+- [ ] http://api.torrent-tv.ru/ttv.xmltv.xml.gz
+- [ ] http://programtv.ru/xmltv.xml.gz
+- [ ] http://epg.it999.ru/edem.xml.gz
+- [ ] https://iptvx.one/epg/epg.xml.gz (полный)
+- [ ] https://iptvx.one/EPG_LITE (без описаний)
+
 ### Roadmap
 
 - [x] Auto directory generator & downloader
