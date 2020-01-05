@@ -60,7 +60,8 @@ class Aggregation
                         'url'    => $item['url'],
                         'ssl'    => $item['ssl'],
                         'image'  => $channel['image'] ? sprintf('http://tv.zikwall.ru/images/logo/%s.png', $channel['image']) : '',
-                        'use_origin' => $channel['useOrigin'] ? 1 : 0
+                        'use_origin' => $channel['useOrigin'] ? 1 : 0,
+                        'xmltv_id' => $channel['xmltv_id'] ?? null,
                     ];
                 }
             }
