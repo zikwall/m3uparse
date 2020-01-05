@@ -73,6 +73,7 @@ class XMLTV extends EPGParser implements IEPGParse
                     'tz'                => Timezone::GMToffsetHours($start->getOffset()),
                     'title'             => $title,
                     'desc'              => $description,
+                    'from'              => $this->xmlName,
                 ];
 
                 if ($this->useCallback) {
