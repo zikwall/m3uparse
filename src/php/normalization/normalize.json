@@ -5,7 +5,8 @@
       "RT Документальный HD"
     ],
     "use":true,
-    "image": "RTД"
+    "image": "RTД",
+    "category": 30
   },
   "10":{
     "origin":"Мир (HD)",
@@ -13,7 +14,8 @@
       "Мир (HD)"
     ],
     "use":true,
-    "image": "Мир"
+    "image": "Мир",
+    "category": 90
   },
   "100":{
     "origin":"Урал-Информ ТВ (Пермь)",
@@ -21,14 +23,17 @@
       "Урал-Информ ТВ (Пермь)"
     ],
     "use":true,
-    "image": ""
+    "image": "",
+    "category": 30
   },
   "101":{
     "origin":"Крым 1",
     "various":[
       "Крым 1"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 90
   },
   "102":{
     "origin":"Миллет",
@@ -77,7 +82,9 @@
     "various":[
       "Odessa Fashion TV"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "109":{
     "origin":"STV (Одесса)",
@@ -98,7 +105,9 @@
     "various":[
       "Sochi 24 HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "111":{
     "origin":"Еспресо TV",
@@ -156,7 +165,8 @@
       "RU TV"
     ],
     "use":true,
-    "image": "RU.TV"
+    "image": "RU.TV",
+    "category": 80
   },
   "119":{
     "origin":"Асыл Арна",
@@ -198,7 +208,9 @@
     "various":[
       "МузСоюз"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "124":{
     "origin":"Русский Север (Вологда)",
@@ -219,7 +231,9 @@
     "various":[
       "Пингвин Лоло"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 50
   },
   "127":{
     "origin":"Ратник ТВ",
@@ -233,21 +247,27 @@
     "various":[
       "AD SPORT 1 HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 40
   },
   "129":{
     "origin":"Xsport TV HD",
     "various":[
       "Xsport TV HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 40
   },
   "13":{
     "origin":"Bridge TV Hits",
     "various":[
       "Bridge TV Hits"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "130":{
     "origin":"Кубань 24 Орбита",
@@ -282,7 +302,9 @@
     "various":[
       "Астрахань.Ru Sport HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 40
   },
   "135":{
     "origin":"Дисконт",
@@ -325,7 +347,8 @@
       "RT HD"
     ],
     "use":true,
-    "image": "RTД"
+    "image": "RTД",
+    "category": 30
   },
   "140":{
     "origin":"Июнь ТВ HD (Междуреченск)",
@@ -374,7 +397,9 @@
     "various":[
       "Russian Music Box"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "147":{
     "origin":"UA Культура",
@@ -467,7 +492,8 @@
       "Россия 1 HD"
     ],
     "use":true,
-    "image": "Россия HD"
+    "image": "Россия HD",
+    "category": 30
   },
   "159":{
     "origin":"8 канал Владивосток",
@@ -482,7 +508,8 @@
       "Россия 1 (Кабардино-Балкария)"
     ],
     "use":true,
-    "image": "Россия 1"
+    "image": "Россия 1",
+    "category": 30
   },
   "160":{
     "origin":"Balti TV (MD)",
@@ -497,7 +524,8 @@
       "Bridge TV Русский хит"
     ],
     "use":true,
-    "image": "BRIDGE TV"
+    "image": "BRIDGE TV",
+    "category": 80
   },
   "162":{
     "origin":"ОТВ (Серпухов)",
@@ -595,7 +623,9 @@
     "various":[
       "Radio 105 Network TV"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "175":{
     "origin":"Рен ТВ International",
@@ -655,7 +685,8 @@
       "Bridge TV"
     ],
     "use":true,
-    "image": "BRIDGE TV"
+    "image": "BRIDGE TV",
+    "category": 80
   },
   "182":{
     "origin":"Shopping Live",
@@ -671,6 +702,7 @@
     ],
     "use":true,
     "image": "Москва 24",
+    "category": 30,
     "xmltv_id": "106"
   },
   "184":{
@@ -678,7 +710,9 @@
     "various":[
       "Новое Радио ТВ"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "185":{
     "origin":"ID Fashion (KZ)",
@@ -749,7 +783,9 @@
     "various":[
       "Крым 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "194":{
     "origin":"Ocean TV",
@@ -764,7 +800,8 @@
       "Россия 1"
     ],
     "use":true,
-    "image": "Россия 1"
+    "image": "Россия 1",
+    "category": 30
   },
   "196":{
     "origin":"Самара ГИС",
@@ -827,7 +864,9 @@
     "various":[
       "Шансон ТВ"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "203":{
     "origin":"Akudji TV HD",
@@ -1062,7 +1101,9 @@
     "various":[
       "360 Новости HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "233":{
     "origin":"Simon TV (Харьков)",
@@ -1090,7 +1131,9 @@
     "various":[
       "100% News"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "237":{
     "origin":"11 канал (Днепр)",
@@ -1119,7 +1162,8 @@
       "Грозный ТВ"
     ],
     "use":true,
-    "image": "ЧГТРК Грозный"
+    "image": "ЧГТРК Грозный",
+    "category": 30
   },
   "240":{
     "origin":"Дайвинг TV",
@@ -1198,6 +1242,7 @@
     ],
     "use":true,
     "image": "СТС",
+    "category": 70,
     "useOrigin": true
   },
   "250":{
@@ -1240,7 +1285,9 @@
     "various":[
       "Первый Городской (Калининград)"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "256":{
     "origin":"Прямой HD",
@@ -1254,7 +1301,9 @@
     "various":[
       "Татарстан 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "258":{
     "origin":"TV Brics",
@@ -1275,14 +1324,18 @@
     "various":[
       "Саратов 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "260":{
     "origin":"Правда ТУТ Львов",
     "various":[
       "Правда ТУТ Львов"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "261":{
     "origin":"Арис 24",
@@ -1303,7 +1356,9 @@
     "various":[
       "360 HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "264":{
     "origin":"Pingvini Ukas (EE)",
@@ -1538,21 +1593,27 @@
     "various":[
       "Якутия 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "294":{
     "origin":"Первый Музыкальный UHD BY",
     "various":[
       "Первый Музыкальный UHD BY"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "295":{
     "origin":"Россия 1 (Чувашия)",
     "various":[
       "Россия 1 (Чувашия)"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "296":{
     "origin":"9 канал (Днепр)",
@@ -1573,7 +1634,9 @@
     "various":[
       "NRJ Hits TV HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "299":{
     "origin":"UA Чернигов",
@@ -1601,7 +1664,9 @@
     "various":[
       "Классика кино"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 10
   },
   "301":{
     "origin":"Донеччина TV",
@@ -1644,7 +1709,9 @@
     "various":[
       "Первый Музыкальный RU HD BY"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "307":{
     "origin":"112 Украина HD",
@@ -1996,14 +2063,18 @@
     "various":[
       "Нижний Новгород 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "352":{
     "origin":"Сургут 24",
     "various":[
       "Сургут 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "353":{
     "origin":"Ocko Star",
@@ -2053,7 +2124,8 @@
       "France 24 (ENG)"
     ],
     "use":true,
-    "image": "FRANCE 24"
+    "image": "FRANCE 24",
+    "category": 30
   },
   "36":{
     "origin":"FILM TV",
@@ -2081,7 +2153,9 @@
     "various":[
       "Тольятти 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "363":{
     "origin":"Центр Красноярск",
@@ -2117,7 +2191,8 @@
       "Россия 24 (Чита)"
     ],
     "use":true,
-    "image": "Россия 24"
+    "image": "Россия 24",
+    "category": 30
   },
   "368":{
     "origin":"Скиф (Беларусь)",
@@ -2202,7 +2277,9 @@
     "various":[
       "Первый Балтийский Муз."
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "379":{
     "origin":"Первый Псковский",
@@ -2223,7 +2300,9 @@
     "various":[
       "Пингвин Лоло (LV)"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 50
   },
   "381":{
     "origin":"ТБН",
@@ -2244,14 +2323,18 @@
     "various":[
       "Первый Музыкальный BY"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "384":{
     "origin":"Башкортостан 24 HD",
     "various":[
       "Башкортостан 24 HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "385":{
     "origin":"СТРК HD",
@@ -2272,7 +2355,9 @@
     "various":[
       "Муниципальное Телевидение Волгограда"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 30
   },
   "388":{
     "origin":"ТВ Тур",
@@ -2315,7 +2400,8 @@
       "Радио Шансон ТВ"
     ],
     "use":true,
-    "image": "Шансон ТВ"
+    "image": "Шансон ТВ",
+    "category": 80
   },
   "393":{
     "origin":"Сонце",
@@ -2336,7 +2422,9 @@
     "various":[
       "Мордовия 24"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "Россия 24",
+    "category": 30
   },
   "396":{
     "origin":"ТВ-Дом (Одесса)",
@@ -2357,7 +2445,9 @@
     "various":[
       "Bridge TV Classic"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "399":{
     "origin":"M2O TV",
@@ -2560,14 +2650,18 @@
     "various":[
       "1HD Music TV"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "424":{
     "origin":"RU TV HD",
     "various":[
       "RU TV HD"
     ],
-    "use":true, "image": ""
+    "use":true,
+    "image": "",
+    "category": 80
   },
   "425":{
     "origin":"UA Волынь",
@@ -3289,6 +3383,7 @@
     ],
     "use":true,
     "image": "ТВЦ",
+    "category": 90,
     "xmltv_id": "3"
   },
 
@@ -3298,7 +3393,8 @@
       "TV1000 Action"
     ],
     "use": true,
-    "image": "TV 1000 Action"
+    "image": "TV 1000 Action",
+    "category": 10
   },
   "100002": {
     "origin": "TV1000 Premium HD",
@@ -3306,7 +3402,8 @@
       "TV1000 Premium HD"
     ],
     "use": true,
-    "image": "TV 1000 Premium HD"
+    "image": "TV 1000 Premium HD",
+    "category": 10
   },
   "100003": {
     "origin": "TV1000",
@@ -3314,7 +3411,8 @@
       "TV1000"
     ],
     "use": true,
-    "image": "TV 1000"
+    "image": "TV 1000",
+    "category": 10
   },
   "100004": {
     "origin": "TV1000 Action HD",
@@ -3322,7 +3420,8 @@
       "TV1000 Action HD"
     ],
     "use": true,
-    "image": "TV 1000 Action"
+    "image": "TV 1000 Action",
+    "category": 10
   },
   "100005": {
     "origin": "TV1000 Русское Кино",
@@ -3331,7 +3430,8 @@
       "TV1000 Русское кино"
     ],
     "use": true,
-    "image": "TV 1000"
+    "image": "TV 1000",
+    "category": 10
   },
   "100006": {
     "origin": "TV1000 Premium",
@@ -3339,7 +3439,8 @@
       "TV1000 Premium"
     ],
     "use": true,
-    "image": "TV 1000 Premium HD"
+    "image": "TV 1000 Premium HD",
+    "category": 10
   },
   "100007": {
     "origin": "TV1000 Premium East",
@@ -3347,7 +3448,8 @@
       "TV1000 Premium East"
     ],
     "use": true,
-    "image": "TV 1000"
+    "image": "TV 1000",
+    "category": 10
   },
   "100008": {
     "origin": "TV 1000 Russkoe Kino",
@@ -3355,7 +3457,8 @@
       "TV 1000 Russkoe Kino"
     ],
     "use": true,
-    "image": "TV 1000"
+    "image": "TV 1000",
+    "category": 10
   },
 
   "110001": {
@@ -3364,7 +3467,8 @@
       "ViP Comedy HD"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "110002": {
     "origin": "ViP Megahit",
@@ -3372,7 +3476,8 @@
       "ViP Megahit"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "110003": {
     "origin": "ViP Premiere",
@@ -3380,7 +3485,8 @@
       "ViP Premiere"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
 
   "120001": {
@@ -3389,7 +3495,8 @@
       "Sony Channel HD"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 70
   },
   "120002": {
     "origin": "Sony Sci-Fi",
@@ -3397,7 +3504,8 @@
       "Sony Sci-Fi"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 70
   },
 
   "130001": {
@@ -3406,7 +3514,8 @@
       "FOX"
     ],
     "use": true,
-    "image": "FOX"
+    "image": "FOX",
+    "category": 70
   },
   "130002": {
     "origin": "FOX Life",
@@ -3414,7 +3523,8 @@
       "FOX Life"
     ],
     "use": true,
-    "image": "FOX life"
+    "image": "FOX life",
+    "category": 70
   },
 
   "140001": {
@@ -3423,7 +3533,8 @@
       "Русский иллюзион"
     ],
     "use": true,
-    "image": "Русский Иллюзион"
+    "image": "Русский Иллюзион",
+    "category": 10
   },
   "140002": {
     "origin": "Кинокомедия",
@@ -3431,7 +3542,8 @@
       "Кинокомедия"
     ],
     "use": true,
-    "image": "Кинокомедия"
+    "image": "Кинокомедия",
+    "category": 10
   },
   "140003": {
     "origin": "Киномикс",
@@ -3439,7 +3551,8 @@
       "Киномикс"
     ],
     "use": true,
-    "image": "Киномикс"
+    "image": "Киномикс",
+    "category": 10
   },
   "140004": {
     "origin": "Кинопремьера HD",
@@ -3447,7 +3560,8 @@
       "Кинопремьера HD"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "140005": {
     "origin": "Киносвидание",
@@ -3455,7 +3569,8 @@
       "Киносвидание"
     ],
     "use": true,
-    "image": "Киносвидание"
+    "image": "Киносвидание",
+    "category": 10
   },
   "140006": {
     "origin": "Киносемья",
@@ -3463,7 +3578,8 @@
       "Киносемья"
     ],
     "use": true,
-    "image": "Киносемья"
+    "image": "Киносемья",
+    "category": 10
   },
   "140008": {
     "origin": "Киносерия",
@@ -3471,7 +3587,8 @@
       "Киносерия"
     ],
     "use": true,
-    "image": "Киносерия"
+    "image": "Киносерия",
+    "category": 10
   },
   "140009": {
     "origin": "Мужское кино",
@@ -3479,7 +3596,8 @@
       "Мужское кино"
     ],
     "use": true,
-    "image": "Мужское кино"
+    "image": "Мужское кино",
+    "category": 10
   },
   "140010": {
     "origin": "Классика кино",
@@ -3487,7 +3605,8 @@
       "Классика кино"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "140011": {
     "origin": "Индийское кино",
@@ -3495,7 +3614,8 @@
       "Индийское кино"
     ],
     "use": true,
-    "image": "Индийское кино"
+    "image": "Индийское кино",
+    "category": 10
   },
   "140012": {
     "origin": "Родное кино",
@@ -3503,7 +3623,8 @@
       "Родное кино"
     ],
     "use": true,
-    "image": "Родное кино"
+    "image": "Родное кино",
+    "category": 10
   },
   "140013": {
     "origin": "Комедийное HD",
@@ -3511,7 +3632,8 @@
       "Комедийное HD"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "140014": {
     "origin": "Классика кино HD",
@@ -3519,7 +3641,8 @@
       "Классика кино HD"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "140015": {
     "origin": "Kronehit HD",
@@ -3527,7 +3650,8 @@
       "Kronehit HD"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "140016": {
     "origin": "Русский роман",
@@ -3536,6 +3660,7 @@
     ],
     "use": true,
     "image": "Русский роман",
+    "category": 10,
     "useOrigin": true
   },
   "140017": {
@@ -3544,7 +3669,8 @@
       "Русский детектив"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 10
   },
   "140018": {
     "origin": "Русский Бестселлер",
@@ -3552,7 +3678,8 @@
       "Русский Бестселлер"
     ],
     "use": true,
-    "image": "Русский бестселлер"
+    "image": "Русский бестселлер",
+    "category": 10
   },
 
   "150001": {
@@ -3561,7 +3688,8 @@
       "В Мире Животных HD"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 20
   },
   "150002": {
     "origin": "Oхотник и Рыболов HD",
@@ -3569,7 +3697,8 @@
       "Oхотник и Рыболов HD"
     ],
     "use": true,
-    "image": "Охотник и рыболов HD"
+    "image": "Охотник и рыболов HD",
+    "category": 60
   },
   "150003": {
     "origin": "Охота и Рыбалка",
@@ -3577,7 +3706,8 @@
       "Охота и Рыбалка"
     ],
     "use": true,
-    "image": "Охота и рыбалка"
+    "image": "Охота и рыбалка",
+    "category": 60
   },
   "150004": {
     "origin": "National Geographic",
@@ -3585,7 +3715,8 @@
       "National Geographic"
     ],
     "use": true,
-    "image": "National Geographic"
+    "image": "National Geographic",
+    "category": 20
   },
   "150005": {
     "origin": "National Geographic HD",
@@ -3593,7 +3724,8 @@
       "National Geographic HD"
     ],
     "use": true,
-    "image": "National Geographic HD"
+    "image": "National Geographic HD",
+    "category": 20
   },
   "150006": {
     "origin": "Discovery",
@@ -3601,7 +3733,8 @@
       "Discovery"
     ],
     "use": true,
-    "image": "Discovery HD"
+    "image": "Discovery HD",
+    "category": 20
   },
   "150007": {
     "origin": "Animal Planet HD",
@@ -3609,7 +3742,8 @@
       "Animal Planet HD"
     ],
     "use": true,
-    "image": "Animal planet"
+    "image": "Animal planet",
+    "category": 20
   },
   "150008": {
     "origin": "Неизвестная планета",
@@ -3617,7 +3751,8 @@
       "Неизвестная планета"
     ],
     "use": true,
-    "image": ""
+    "image": "",
+    "category": 20
   },
   "150009": {
     "origin": "Наш Дом HD",
@@ -3625,6 +3760,7 @@
       "Наш Дом HD"
     ],
     "use": true,
+    "category": 20,
     "image": ""
   },
 
@@ -3634,7 +3770,8 @@
       "ПЯТНИЦА! HD"
     ],
     "use": true,
-    "image": "ПЯТНИЦА"
+    "image": "ПЯТНИЦА",
+    "category": 70
   },
   "160002": {
     "origin": "Пятница",
@@ -3642,7 +3779,9 @@
       "Пятница"
     ],
     "use": true,
-    "image": "ПЯТНИЦА"
+    "image": "ПЯТНИЦА",
+    "category": 70,
+    "web_view": ""
   },
   "160003": {
     "origin": "Россия 1 HD",
@@ -3650,7 +3789,8 @@
       "Россия 1 HD"
     ],
     "use": true,
-    "image": "Россия HD"
+    "image": "Россия HD",
+    "category": 90
   },
 
   "170001": {
@@ -3659,7 +3799,8 @@
       "Nickelodeon"
     ],
     "use": true,
-    "image": "Nickelodeon"
+    "image": "Nickelodeon",
+    "category": 50
   },
   "170002": {
     "origin": "Cartoon Network",
@@ -3667,7 +3808,8 @@
       "Cartoon Network"
     ],
     "use": true,
-    "image": "Cartoon Network"
+    "image": "Cartoon Network",
+    "category": 50
   },
   "170003": {
     "origin": "Disney Channel",
@@ -3676,6 +3818,7 @@
     ],
     "use": true,
     "image": "Канал Disney",
+    "category": 50,
     "useOrigin": true
   },
   "170004": {
@@ -3685,6 +3828,7 @@
     ],
     "use": true,
     "image": "Канал Disney",
+    "category": 50,
     "useOrigin": true
   },
   "170005": {
@@ -3693,7 +3837,8 @@
       "Disney XD"
     ],
     "use": true,
-    "image": "Канал Disney"
+    "image": "Канал Disney",
+    "category": 50
   },
   "170006": {
     "origin": "Disney канал",
@@ -3701,6 +3846,7 @@
       "Disney канал"
     ],
     "use": true,
+    "category": 50,
     "image": "Канал Disney"
   },
 
@@ -3710,7 +3856,8 @@
       "МАТЧ!"
     ],
     "use": true,
-    "image": "Матч ТВ"
+    "image": "Матч ТВ",
+    "category": 40
   },
   "200002": {
     "origin": "МАТЧ! HD",
@@ -3719,6 +3866,7 @@
     ],
     "use": true,
     "image": "Матч ТВ",
+    "category": 40,
     "useOrigin": true
   },
   "200003": {
@@ -3727,6 +3875,7 @@
       "МАТЧ! АРЕНА"
     ],
     "use": true,
-    "image": "Матч арена"
+    "image": "Матч арена",
+    "category": 40
   }
 }

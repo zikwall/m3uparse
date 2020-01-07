@@ -55,13 +55,14 @@ class Aggregation
                     }
 
                     $result[$id] = [
-                        'epg_id' => $id,
-                        'name'   => $item['name'],
-                        'url'    => $item['url'],
-                        'ssl'    => $item['ssl'],
-                        'image'  => $channel['image'] ? sprintf('http://tv.zikwall.ru/images/logo/%s.png', $channel['image']) : '',
-                        'use_origin' => $channel['useOrigin'] ? 1 : 0,
-                        'xmltv_id' => $channel['xmltv_id'] ?? null,
+                        'epg_id'        => $id,
+                        'name'          => $item['name'],
+                        'url'           => $item['url'],
+                        'ssl'           => $item['ssl'],
+                        'image'         => $channel['image'] ?? null,
+                        'use_origin'    => $channel['useOrigin'] ? 1 : 0,
+                        'xmltv_id'      => $channel['xmltv_id'] ?? null,
+                        'category'      => $channel['category'] ?? null
                     ];
                 }
             }
