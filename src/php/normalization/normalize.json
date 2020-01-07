@@ -634,7 +634,8 @@
     ],
     "use":true,
     "image": "Рен ТВ",
-    "useOrigin": true
+    "useOrigin": true,
+    "xmltv_id": 103
   },
   "176":{
     "origin":"Россия К",
@@ -3809,7 +3810,8 @@
     ],
     "use": true,
     "image": "Cartoon Network",
-    "category": 50
+    "category": 50,
+    "xmltv_id": 211
   },
   "170003": {
     "origin": "Disney Channel",
